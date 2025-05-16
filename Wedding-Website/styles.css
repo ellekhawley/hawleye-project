@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    font-family: "PT Serif", serif;
+    background-color: white;
+}
+header{
+    padding: 1rem;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+nav img{
+    width: 80px;
+    margin-bottom: 0.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    background-color: #164121;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-family: "PT Serif", serif;
+    text-align: center;
+    width: 150px;
+    background-color: #688277;
+}
+nav a:hover{
+    background-color: #164121;
+}
+main{
+    text-align: center;
+    padding: 1rem;
+}
+main h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.8rem;
+    background-color: #164121;
+    color: white;
+    margin: 1rem 0;
+    padding: 1rem 0.5rem;
+}
+main img{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+main h3{
+    font-size: 3rem;
+    font-family: "PT Serif", serif;
+    background-color: #688277;
+    color: white;
+    padding: 2rem 1rem;
+    margin: 0;
+}
+
+@media (min-width: 1000px){
+    nav{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    nav img{
+        order: -1;
+        margin: 0 2rem 0 0;
+        width: 100px;
+    }
+    main h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+    .home main h3 {
+        flex: 1;
+        font-size: 4rem;
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    main h3{
+        flex: 1;
+        font-size: 4rem;
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    main img{
+        flex: 1;
+        max-width: 600px;
+        max-height: 700px;
+        object-fit: cover;
+    }
+    main h2{
+        width: 100%;
+    }
+    
+    .story-content{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .story-content p{
+        font-size: 20px;
+        flex: 1;
+        min-width: 300px;
+        text-align: left;
+    }
+    .story-content img{
+        flex: 1;
+        min-width: 200px;
+        max-height: 700px;
+        object-fit: cover;
+    }
+    .timeline-section .timeline{
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin: 2rem auto;
+        display: block;
+    }
+    .timeline-section p{
+        font-size: 20px;
+        text-align: left;
+    }
+    main h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .details-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+    .details-text{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 1rem;
+        min-width: 300px;
+    }
+    .details-text h3{
+        font-size: 2.5rem;
+        background-color: #688277;
+        padding: 1rem 0;
+        color: white;
+        text-align: center;
+    }
+    .details-text p{
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }  
+    .details-section img{
+        flex: 1;
+        max-height: 500px;
+        width: auto;
+        object-fit: contain;
+        padding: 0rem;
+        background-color: white;
+    }
+    .venue-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .venue-section img{
+        flex: 1;
+        max-width: 1000px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .venue-text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .venue-text h3{
+        font-size: 2.5rem;
+        background-color: #688277;
+        color: white;
+        padding: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    .venue-text p{
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .bridal-member{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        border-bottom: 2px solid #b4b3b3;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bridal-member img{
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .bridal-text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 1rem;
+    }
+    .bridal-text h3{
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    .bridal-text p{
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .theme-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+    }
+    .theme-section img{
+        flex: 1;
+        max-width: 600px;
+        height: auto;
+        object-fit: contain;
+        background-color: white;
+    }
+    .theme-text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 1rem;
+        min-width: 300px;
+    }
+    .theme-text h3{
+        font-size: 2.5rem;
+        background-color: #688277;
+        color: white;
+        padding: 1rem;
+        margin: 0;
+    }
+    .theme-text p{
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
